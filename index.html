@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for Titles</title>
+    <script src="movie.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="nav-button" id="login_button" href="login.html">Login</a>
+        <a class="nav-button" href="index.html">Lists</a>
+        <a class="nav-button" href="index.html">Friends</a>
+    </div>   
+    <div class="searchbar">
+        <form>
+            <input type="text" placeholder="Search by Title" id="movie-search-box" onkeyup="findMovies()">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+    <div class="search-list" id="search-list"></div>
+    <div class="recommended" id="indexrecs">
+        <p>Movies You Might Enjoy</p>
+        <div class="movielist">
+            <img class="movie" src="./assets/Oppenheimer.jpg">
+            <img class="movie" src="./assets/MiamiBici2.jpg">
+            <img class="movie" src="./assets/FightClub.jpg">
+            <img class="movie" src="./assets/1984.jpg">
+            <img class="movie" src="./assets/FordvFerrari.png">
+        </div>
+    </div>
+    <div class="recommended" id="indexrecs">
+        <div class="movielist" id="resultlist">
+        </div>
+    </div>
+</body>
+</html>
